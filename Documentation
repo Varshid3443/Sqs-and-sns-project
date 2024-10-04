@@ -16,6 +16,29 @@
 *Go to the sqs documention in aws and cong the s3 bucket with sqs documention 
 *Copy the poilcy generarter just replace with our sqs arn,s3 arn and account id
 *And then go to sqs acess policy and replace with new one and save it.
+{
+  "Version": "2012-10-17",
+  "Id": "example-ID",
+  "Statement": [
+    {
+      "Sid": "example-statement-ID",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "s3.amazonaws.com"
+      },
+      "Action": "SQS:SendMessage",
+      "Resource": "arn:aws:sqs:ap-south-1:022499023963:test",
+      "Condition": {
+        "StringEquals": {
+          "aws:SourceAccount": "022499023963"
+        },
+        "ArnLike": {
+          "aws:SourceArn": "arn:aws:s3:::testvarshid"
+        }
+      }
+    }
+  ]
+}
 ****ERROR will resolve****
 
 
