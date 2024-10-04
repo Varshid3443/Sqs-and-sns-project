@@ -1,0 +1,6 @@
+* First open our aws account and go to the simple queue serice (sns)
+*Click on create button ---------go for standard 
+*Select the visibility queue as per our requirement
+*And click on create
+*Next go to the sendand recevie messages Write on boday part
+*next click on start poll messages and you we will recieve messages for very visibility timeout
