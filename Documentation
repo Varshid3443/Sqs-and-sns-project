@@ -4,3 +4,18 @@
 *And click on create
 *Next go to the sendand recevie messages Write on boday part
 *next click on start poll messages and you we will recieve messages for very visibility timeout
+*******Connecting my s3 bucket with sqs service *******
+**If anyone of our teammate create or delete the file in s3 bucket it will automatically send the messages to my sqs queue**
+
+*Create one s3 bucket
+*And go to s3 properties and Event notifications then create the events
+*In the event types object creation select what ever field you need to mointer 
+*Select the destination as sqs , next you will get error(API RESPONSE)
+****Troubleshooting part****
+*go o the sqs acess policy and edit it we need to allow s3 in sqs
+*Go to the sqs documention in aws and cong the s3 bucket with sqs documention 
+*Copy the poilcy generarter just replace with our sqs arn,s3 arn and account id
+*And then go to sqs acess policy and replace with new one and save it.
+****ERROR will resolve****
+
+
