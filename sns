@@ -1,0 +1,5 @@
+***How send the notification to our mail id using sns service***
+*Go to the sns service and create the topic 
+*Next go to the subscription and select the protocal as email and give ,mail id
+*Go to our mail and approve the confirmation mail from the aws 
+*Then click on the publish message and write the boby message then click publish message
